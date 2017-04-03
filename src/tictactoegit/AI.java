@@ -123,6 +123,12 @@ public class AI {
         if (depth == 1) {
 
             board.addCoorD(moves.get(bestMove).x, moves.get(bestMove).y, comp);
+             if(board.checkWin()==comp){
+            	 moves temp = moves.get(bestMove);
+                 moves.clear();
+
+                 return temp;
+             }
             for (moves move: possibleMoves) {
                 moves temp = new moves();
                 int x = move.x;
