@@ -11,8 +11,8 @@ import java.util.List;
 
 
 public class AI {
-    // final static int CPU_POWER =50000000;
-    final static int CPU_POWER = 5000000;
+     final static int CPU_POWER =10000000;
+   // final static int CPU_POWER = 5000000;
     int comp;
     int human;
     moves move;
