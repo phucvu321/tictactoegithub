@@ -44,8 +44,9 @@ public class Board {
             }
             System.out.print('+' + "\n");
             for (int i = 0; i < size; i++) {
-                System.out.print(verticalDraw + coorD[i + 1][height + 1] + " ");
-
+                if(coorD[i + 1][height + 1] == Character.MIN_VALUE)
+                System.out.print(verticalDraw+ "  ");
+                   else System.out.print(verticalDraw+coorD[i + 1][height + 1]+" ");
             }
             System.out.print('|' + "\n");
 
